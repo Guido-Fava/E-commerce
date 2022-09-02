@@ -20,14 +20,14 @@ header {
     margin-bottom: 20px;
 }
 h1 {
-    color: royalblue;
+    color: black;
     text-transform: uppercase;
     font-weight: 700;
     font-size: 50px;
 }
 #boton-carrito {
     border: none;
-    color: royalblue;
+    color: black;
     font-size: 40px;
     background-color: white;
     border-radius: 50%;

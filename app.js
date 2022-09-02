@@ -2,6 +2,7 @@ const contenedorProductos = document.getElementById('contenedor-productos')
 
 const contenedorCarrito = document.getElementById('carrito-contenedor') //por esto no funcionabaaaaaa
 
+
 let carrito = []
 stockProductos.forEach((producto) => {
     const div = document.createElement('div')
@@ -19,9 +20,14 @@ stockProductos.forEach((producto) => {
  const boton = document.getElementById(`agregar${producto.id}`)
 
  boton.addEventListener('click', () => {
-
+    swal({
+        title: "Producto agregado al carrito",
+        icon: "success",
+        button: "¡Continuar comprando!",
+      });
      agregarAlCarrito(producto.id)
 
+     
  })
 })
 
